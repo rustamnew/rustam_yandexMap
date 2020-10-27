@@ -1,0 +1,68 @@
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.modal {
+    background-color: white;
+    border: 1px solid black;
+    width: 380px;
+
+    padding: 10px;
+
+    top: 0;
+    left: -500px;
+
+    position: absolute;
+}
+
+.modal__head {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.modal__close {
+    color: black;
+    cursor: pointer;
+}
+
+.modal__title {
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.input {
+    width: 75%;
+    height: 30px;
+
+    border-radius: 5px;
+    border: 1px solid black;
+
+    margin-bottom: 10px;
+}
+
+.input.textarea {
+    resize: none;
+    height: 70px;
+}
+
+.input.submit {
+    width: 20%;
+
+    align-self: flex-end;
+}
+
+.input:last-child{
+    margin-bottom: 0;
+}
